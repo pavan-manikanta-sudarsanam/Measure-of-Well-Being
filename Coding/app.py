@@ -5,8 +5,8 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the trained model and label encoder
-model = joblib.load("hdi_model.pkl")
-label_encoder = joblib.load("label_encoder.pkl")
+model = joblib.load("Models/hdi_model.pkl")
+label_encoder = joblib.load("Models/label_encoder.pkl")
 
 
 @app.route("/")
